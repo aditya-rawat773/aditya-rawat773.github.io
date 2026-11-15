@@ -19,9 +19,9 @@
 <body>
 <main>
 <h1>TradeMettle Privacy Policy</h1>
-<p class="muted">Effective 14 November 2026</p>
+<p class="muted">Effective 15 November 2026</p>
 
-<p>TradeMettle is a checklist and rule keeper for intraday traders. It has no account, connects to no broker, and never sends your trading records to us. The Android app shows ads from Google AdMob, counts usage with Google Analytics for Firebase, and reports crashes with Firebase Crashlytics; Google collects some device data for each, as described below.</p>
+<p>TradeMettle is a checklist and rule keeper for intraday traders. It has no account and connects to no broker, and your rules and Days History are stored only on your phone. The Android app shows ads from Google AdMob, measures how the app is used with Google Analytics for Firebase, and reports crashes with Firebase Crashlytics; Google collects some data for each, as described below.</p>
 
 <h2>What stays on your phone</h2>
 <p>The app stores the following only on your device:</p>
@@ -30,7 +30,7 @@
   <li>today's session: trades used, losses in a row, open trade time, break timers, and whether you stopped for the day;</li>
   <li>Days History: for each session, its date, entry and exit times, win, loss, break-even or abandoned outcomes, rule breaks and grade.</li>
 </ul>
-<p>We never receive any of it. Uninstalling the app, or clearing its data in Android Settings, deletes it.</p>
+<p>This stored data isn't uploaded. The usage events described under Usage analytics do report what happens in the app as it happens, such as a trade's result or why a day ended, but never prices, amounts, profit or loss figures, or the wording of your checklist. Uninstalling the app, or clearing its data in Android Settings, deletes the stored data.</p>
 
 <h2>Backups</h2>
 <p>If Android backup is on, Android may include your rules and Days History (not the live session) in your device backup, stored in your Google account under Google's terms. The same data can move to a new phone when you transfer your apps. You can turn backup off in your phone's settings.</p>
@@ -48,14 +48,29 @@
 <p>You can reset or delete your advertising ID in your phone's settings (Settings → Privacy → Ads, or Settings → Google → Ads, depending on the phone). The iOS app currently shows no ads.</p>
 
 <h2>Usage analytics (Android)</h2>
-<p>The Android app uses Google Analytics for Firebase to count installs, app opens and sessions, and to see which app versions and devices are in use. For that, Google collects:</p>
+<p>The Android app uses Google Analytics for Firebase to see how the app is used, so we can tell which parts help traders and which need work. For that, Google collects:</p>
 <ul>
   <li>an app instance ID, and your device's advertising ID;</li>
   <li>device and app details, such as model, operating system, language and app version;</li>
   <li>your country or region, derived from your IP address;</li>
-  <li>automatic events, such as first open, session start and app updates.</li>
+  <li>automatic events, such as first open, session start and app updates;</li>
+  <li>usage events, listed below.</li>
 </ul>
-<p>Analytics never receives your rules, sessions or Days History. Read <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
+<p>The usage events are:</p>
+<ul>
+  <li>which screen you open: Home, History, Settings or the introduction;</li>
+  <li>finishing the introduction, and whether you picked your own limits;</li>
+  <li>completing the pre-trade checklist, with how many checks it has and whether you changed it;</li>
+  <li>logging a trade entry, with its number in the session and whether it broke a rule;</li>
+  <li>logging a trade's result as a win, a loss or a break-even;</li>
+  <li>a break or pause starting after a result;</li>
+  <li>the day ending, why (the loss limit, every trade used, Done for today, or midnight), and how many trades it had;</li>
+  <li>a rule being broken, and which kind;</li>
+  <li>using undo, resetting the day in Settings, and tapping the break reminder or "Review today in History";</li>
+  <li>opening a session or picking a date in History;</li>
+  <li>changing a rule, the checklist or a preference: which rule changed (not its new setting), how many checks the checklist now has, and whether a preference is now on or off.</li>
+</ul>
+<p>Each event is sent with the time it happened, so together the events show how you used the app on a given day. They never include prices, amounts, profit or loss figures, or the wording of your checklist. Read <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
 
 <h2>Crash reports (Android)</h2>
 <p>If the Android app crashes, Firebase Crashlytics sends a crash report to Google so the problem can be found and fixed. A report contains:</p>
